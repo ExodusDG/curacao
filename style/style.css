@@ -1,0 +1,262 @@
+/* FONTS & SETTINGS */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy-Medium'), local('Gilroy-Medium'), url('../style/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('../style/fonts/Gilroy-Medium.woff2') format('woff2'), url('../style/fonts/Gilroy-Medium.woff') format('woff'), url('../style/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: local('Gilroy-Bold'), local('Gilroy-Bold'), url('../style/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('../style/fonts/Gilroy-Bold.woff2') format('woff2'), url('../style/fonts/Gilroy-Bold.woff') format('woff'), url('../style/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Black.eot');
+    src: local('Gilroy-Black'), local('Gilroy-Black'), url('../style/fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'), url('../style/fonts/Gilroy-Black.woff2') format('woff2'), url('../style/fonts/Gilroy-Black.woff') format('woff'), url('../style/fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: #3F2B4F;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+:root {
+    --BlueColor: #0375FA;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    background: #F4F9FF;
+}
+
+/* HEADER */
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.navbar img {
+    width: 180px;
+}
+
+
+.headerContent {
+    width: 100vw;
+    height: 530px;
+    position: relative;
+    text-align: center;
+}
+
+.headerContentBlock {
+    width: 870px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: rgba(38, 50, 59, 0.77);
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    top: 20%;
+
+}
+
+.headerContentBlock h2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 136.5%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+.headerContentBlock a {
+    padding: 13px 24px;
+    background: var(--BlueColor);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+    position: relative;
+    transition: 0.3s;
+    border: 1px solid #0375FA;
+}
+
+.headerContentBlock a:hover {
+    background: transparent;
+    color: var(--BlueColor);
+}
+
+/* CONTENT */
+.contentText {
+    text-align: center;
+}
+
+.contentText h1 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 136.5%;
+    letter-spacing: -0.02em;
+    color: #3F2B4F;
+}
+
+.contentText span {
+    font-weight: 800;
+}
+
+.content {
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+.contentPost>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contentPost {
+    text-align: left;
+    padding-top: 90px;
+
+}
+
+.contentPost p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 136.5%;
+    letter-spacing: -0.02em;
+    color: #3F2B4F;
+    margin-bottom: 30px;
+}
+
+.contentPost img {
+    width: 530px;
+}
+
+.contentFlexHeaderText {
+    width: 509px;
+}
+
+.contentButton {
+    text-align: center;
+  margin-top: 50px;
+
+}
+.contentButton a {
+    padding: 12px 43px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 136.5%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: var(--BlueColor);
+    border: 1px solid var(--BlueColor);
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.contentButton a:hover {
+    background: transparent;
+    color: #0375FA;
+}
+
+
+.BlackFooter {
+    background: #26323b;
+    padding: 25px;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.BlackFooter p {
+    color: white;
+}
+
+.BlackFooter a {
+    font-weight: 700;
+    color: #0375FA;
+    text-decoration: none;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .contentPost > div {
+        flex-wrap: wrap-reverse;
+    }
+    .contentPost img {
+        width: 100%;
+    }
+    .contentFlexHeaderText {
+        width: 100%;
+    }
+    .headerContentBlock {
+        width: 90%;
+    }
+}
+
+@media (max-width: 490px) {
+    .headerContentBlock h2 {
+        font-size: 54px;
+    }
+    .contentFlexHeaderText {
+        margin-top: 40px;
+    }
+    .BlackFooter p {
+        line-height: 25px;
+    }
+}
